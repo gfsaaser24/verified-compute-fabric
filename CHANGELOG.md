@@ -15,6 +15,7 @@ Revised and extended edition. Section-by-section detail is in [Appendix B](spec/
 - Corrected the SLSA reference title and made two reference dates exact. Kept and re-checked all 40 version 1.0 sources; added 45.
 - Co-Authored with Human Assistance from: Gabe Fletcher.
 - Moved into this repository as the source of truth: text in Markdown, sources in YAML.
+- Licensed under the Apache License 2.0.
 
 ## 1.0 · 24 October 2026
 
