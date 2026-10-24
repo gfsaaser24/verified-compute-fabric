@@ -1,0 +1,59 @@
+# Copies the spec files the website reads into the private site repository,
+# gfsaaser24/verified-compute-fabric-site, whenever they change on main.
+# The site repo's push then triggers its Netlify deploy.
+#
+# Needs the secret SITE_DEPLOY_KEY: the private half of a write deploy key on the site repo.
+# The file list lives in the site repo's scripts/sync-spec.sh; keep the paths below in step with it.
+
+name: Sync spec to site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - spec/01-why-breaches-spread.md
+      - spec/18-deployment-profiles.md
+      - spec/21-acceptance-tests.md
+      - spec/23-requirement-traceability.md
+      - references/references.yaml
+      - .github/workflows/sync-site.yml
+  workflow_dispatch:
+
+concurrency:
+  group: sync-site
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the spec
+        uses: actions/checkout@v7
+        with:
+          path: spec
+
+      - name: Check out the site
+        uses: actions/checkout@v7
+        with:
+          repository: gfsaaser24/verified-compute-fabric-site
+          ssh-key: ${{ secrets.SITE_DEPLOY_KEY }}
+          path: site
+
+      - name: Copy the spec files
+        run: site/scripts/sync-spec.sh "$GITHUB_WORKSPACE/spec"
+
+      - name: Commit and push if anything changed
+        working-directory: site
+        run: |
+          if git diff --quiet; then
+            echo "Site already matches the spec."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add vcf
+          git commit -m "Sync spec from verified-compute-fabric@${GITHUB_SHA::7}"
+          git push
