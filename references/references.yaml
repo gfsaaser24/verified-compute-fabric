@@ -1,0 +1,602 @@
+# Every source cited in spec/. Cite with [@key] in Markdown.
+# by: author or organisation · title: exact title · meta: where and when published
+# url: canonical link · checked: date the entry was last verified against the source
+
+# ---- carried over from version 1.0 (re-checked)
+
+nist-zta:
+  by: NIST
+  title: Zero Trust Architecture
+  meta: SP 800-207, August 2020.
+  url: https://csrc.nist.gov/pubs/sp/800/207/final
+  checked: 2026-10-24
+
+nist-zta-cn:
+  by: NIST
+  title: A Zero Trust Architecture Model for Access Control in Cloud-Native Applications in Multi-Cloud Environments
+  meta: SP 800-207A, September 2023.
+  url: https://csrc.nist.gov/pubs/sp/800/207/a/final
+  checked: 2026-10-24
+
+rats:
+  by: IETF (H. Birkholz et al.)
+  title: Remote ATtestation procedureS (RATS) Architecture
+  meta: RFC 9334, January 2023. Informational.
+  url: https://www.rfc-editor.org/info/rfc9334/
+  checked: 2026-10-24
+
+eat:
+  by: IETF (L. Lundblade et al.)
+  title: The Entity Attestation Token (EAT)
+  meta: RFC 9711, April 2025. Standards Track.
+  url: https://www.rfc-editor.org/info/rfc9711/
+  checked: 2026-10-24
+
+slsa:
+  by: SLSA
+  title: 'Build: Requirements for producing artifacts'
+  meta: SLSA specification v1.2, approved 24 November 2025.
+  url: https://slsa.dev/spec/v1.2/build-requirements
+  checked: 2026-10-24
+
+cosign:
+  by: Sigstore
+  title: Verifying Signatures
+  meta: Cosign documentation.
+  url: https://docs.sigstore.dev/cosign/verifying/verify/
+  checked: 2026-10-24
+
+in-toto:
+  by: S. Torres-Arias et al.
+  title: 'in-toto: Providing farm-to-table guarantees for bits and bytes'
+  meta: 28th USENIX Security Symposium, 2019, pp. 1393–1410.
+  url: https://www.usenix.org/conference/usenixsecurity19/presentation/torres-arias
+  checked: 2026-10-24
+
+tuf:
+  by: The Update Framework
+  title: The Update Framework specification
+  meta: Maintained specification.
+  url: https://theupdateframework.github.io/specification/latest/
+  checked: 2026-10-24
+
+spire:
+  by: SPIFFE Project
+  title: SPIRE Concepts
+  meta: Node attestation, workload attestation and registration.
+  url: https://spiffe.io/docs/latest/spire-about/spire-concepts/
+  checked: 2026-10-24
+
+spiffe:
+  by: SPIFFE Project
+  title: SPIFFE Concepts
+  meta: Workload identifiers, trust domains and identity documents.
+  url: https://spiffe.io/docs/latest/spiffe/concepts/
+  checked: 2026-10-24
+
+oauth-mtls:
+  by: IETF
+  title: OAuth 2.0 Mutual-TLS Client Authentication and Certificate-Bound Access Tokens
+  meta: RFC 8705, February 2020. Standards Track.
+  url: https://www.rfc-editor.org/info/rfc8705/
+  checked: 2026-10-24
+
+dpop:
+  by: IETF
+  title: OAuth 2.0 Demonstrating Proof of Possession (DPoP)
+  meta: RFC 9449, September 2023. Standards Track.
+  url: https://www.rfc-editor.org/info/rfc9449/
+  checked: 2026-10-24
+
+ssdf:
+  by: NIST
+  title: Secure Software Development Framework (SSDF) Version 1.1
+  meta: SP 800-218, February 2022.
+  url: https://csrc.nist.gov/pubs/sp/800/218/final
+  checked: 2026-10-24
+
+cisa-msl:
+  by: CISA and NSA
+  title: 'Memory Safe Languages: Reducing Vulnerabilities in Modern Software Development'
+  meta: Cybersecurity information sheet, 24 June 2025.
+  url: https://www.cisa.gov/resources-tools/resources/memory-safe-languages-reducing-vulnerabilities-modern-software-development
+  checked: 2026-10-24
+
+opa-bundles:
+  by: Open Policy Agent
+  title: Bundles
+  meta: Policy distribution and bundle-signature verification documentation.
+  url: https://www.openpolicyagent.org/docs/management-bundles
+  checked: 2026-10-24
+
+envoy-extauthz:
+  by: Envoy Project
+  title: External Authorization
+  meta: HTTP authorization filter documentation.
+  url: https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/ext_authz_filter
+  checked: 2026-10-24
+
+docker-sec:
+  by: Docker
+  title: Docker Engine security
+  meta: Daemon attack surface and container security documentation.
+  url: https://docs.docker.com/engine/security/
+  checked: 2026-10-24
+
+gvisor:
+  by: gVisor Project
+  title: Security Model
+  meta: Sandbox threat model and isolation boundaries.
+  url: https://gvisor.dev/docs/architecture_guide/security/
+  checked: 2026-10-24
+
+firecracker:
+  by: A. Agache et al.
+  title: 'Firecracker: Lightweight Virtualization for Serverless Applications'
+  meta: 17th USENIX NSDI, 2020, pp. 419–434.
+  url: https://www.usenix.org/conference/nsdi20/presentation/agache
+  checked: 2026-10-24
+
+cilium:
+  by: Cilium Project
+  title: Threat Model
+  meta: Security assumptions and cluster trust boundaries.
+  url: https://docs.cilium.io/en/stable/security/threat-model/
+  checked: 2026-10-24
+
+keylime-ima:
+  by: Keylime Project
+  title: IMA / Integrity Measurement Architecture
+  meta: Runtime-integrity documentation, version 7.11.0.
+  url: https://keylime.readthedocs.io/en/v7.11.0/user_guide/runtime_ima.html
+  checked: 2026-10-24
+
+keylime-dsn:
+  by: M. Ruffin, C. Wang, G. Almasi, A. Adebayo, H. Franke, G. Wang
+  title: 'Towards Continuous Integrity Attestation and Its Challenges in Practice: A Case Study of Keylime'
+  meta: IEEE/IFIP DSN 2025, pp. 256–265.
+  url: https://doi.org/10.1109/DSN64029.2025.00036
+  checked: 2026-10-24
+
+snp:
+  by: AMD / J. Powell
+  title: 'AMD SEV-SNP Attestation: Establishing Trust in Guests'
+  meta: Linux Security Summit Europe, September 2022.
+  url: https://www.amd.com/content/dam/amd/en/documents/developer/lss-snp-attestation.pdf
+  checked: 2026-10-24
+
+tdx:
+  by: Intel
+  title: Intel Trust Domain Extensions (Intel TDX)
+  meta: Architecture and developer overview.
+  url: https://www.intel.com/content/www/us/en/developer/tools/trust-domain-extensions/overview.html
+  checked: 2026-10-24
+
+coco-attest:
+  by: Confidential Containers Project
+  title: Attestation Architecture
+  meta: Trustee, attestation service and key-broker architecture.
+  url: https://confidentialcontainers.org/docs/attestation/architecture/
+  checked: 2026-10-24
+
+coco-secure:
+  by: Confidential Containers Project
+  title: Securing Your Workload
+  meta: Runtime selection, guest policy and attested Init-Data.
+  url: https://confidentialcontainers.org/docs/getting-started/securing-workloads/
+  checked: 2026-10-24
+
+bluefield:
+  by: NVIDIA
+  title: BlueField Modes of Operation
+  meta: DOCA 3.5 archive. DPU and restricted host modes.
+  url: https://networking-docs.nvidia.com/doca/archive/3-5-0/bluefield-modes-of-operation
+  checked: 2026-10-24
+
+sp800-193:
+  by: NIST
+  title: Platform Firmware Resiliency Guidelines
+  meta: SP 800-193, May 2018.
+  url: https://csrc.nist.gov/pubs/sp/800/193/final
+  checked: 2026-10-24
+
+amd-sb-3019:
+  by: AMD
+  title: AMD SEV Confidential Computing Vulnerability
+  meta: Security bulletin AMD-SB-3019 (CVE-2024-56161), 3 February 2025.
+  url: https://www.amd.com/en/resources/product-security/bulletin/amd-sb-3019.html
+  checked: 2026-10-24
+
+cheri:
+  by: University of Cambridge
+  title: 'CHERI: Capability Hardware Enhanced RISC Instructions'
+  meta: Research overview and capability-system design.
+  url: https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/
+  checked: 2026-10-24
+
+nist-rov:
+  by: NIST
+  title: 'Protecting the Integrity of Internet Routing: Border Gateway Protocol (BGP) Route Origin Validation'
+  meta: SP 1800-14, June 2019.
+  url: https://csrc.nist.gov/pubs/sp/1800/14/final
+  checked: 2026-10-24
+
+rfc6811:
+  by: IETF
+  title: BGP Prefix Origin Validation
+  meta: RFC 6811, January 2013. Standards Track.
+  url: https://www.rfc-editor.org/info/rfc6811/
+  checked: 2026-10-24
+
+bcp38:
+  by: IETF
+  title: 'Network Ingress Filtering: Defeating Denial of Service Attacks which employ IP Source Address Spoofing'
+  meta: RFC 2827 / BCP 38, May 2000.
+  url: https://www.rfc-editor.org/info/rfc2827/
+  checked: 2026-10-24
+
+dots:
+  by: IETF
+  title: Distributed Denial-of-Service Open Threat Signaling (DOTS) Signal Channel Specification
+  meta: RFC 9132, September 2021. Standards Track.
+  url: https://www.rfc-editor.org/info/rfc9132/
+  checked: 2026-10-24
+
+cisa-ransom:
+  by: CISA
+  title: StopRansomware Guide
+  meta: Prevention, incident response and recovery guidance.
+  url: https://www.cisa.gov/stopransomware/ransomware-guide
+  checked: 2026-10-24
+
+s3-lock:
+  by: Amazon Web Services
+  title: Locking objects with Object Lock
+  meta: S3 retention modes and write-once-read-many controls.
+  url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html
+  checked: 2026-10-24
+
+pg-rls:
+  by: PostgreSQL Global Development Group
+  title: Row Security Policies
+  meta: PostgreSQL documentation, current edition.
+  url: https://www.postgresql.org/docs/current/ddl-rowsecurity.html
+  checked: 2026-10-24
+
+jcs:
+  by: IETF
+  title: JSON Canonicalization Scheme (JCS)
+  meta: RFC 8785, June 2020. Informational.
+  url: https://www.rfc-editor.org/info/rfc8785/
+  checked: 2026-10-24
+
+sp800-63b:
+  by: NIST (D. Temoshok et al.)
+  title: 'Digital Identity Guidelines: Authentication and Authenticator Management'
+  meta: SP 800-63B-4, July 2025.
+  url: https://doi.org/10.6028/NIST.SP.800-63B-4
+  checked: 2026-10-24
+
+spdx:
+  by: SPDX Project
+  title: SPDX Overview
+  meta: Software bill of materials specification overview.
+  url: https://spdx.dev/about/overview/
+  checked: 2026-10-24
+
+# ---- added in version 2.0
+
+beyondprod:
+  by: Google Cloud
+  title: 'BeyondProd: A new approach to cloud-native security'
+  meta: Whitepaper, December 2019.
+  url: https://cloud.google.com/docs/security/beyondprod
+  checked: 2026-10-24
+
+sunspot:
+  by: CrowdStrike Intelligence
+  title: 'SUNSPOT: An Implant in the Build Process'
+  meta: 11 January 2021.
+  url: https://www.crowdstrike.com/en-us/blog/sunspot-malware-technical-analysis/
+  checked: 2026-10-24
+
+csrb-storm:
+  by: Cyber Safety Review Board (DHS)
+  title: Review of the Summer 2023 Microsoft Exchange Online Intrusion
+  meta: 20 March 2024.
+  url: https://www.cisa.gov/sites/default/files/2025-03/CSRBReviewOfTheSummer2023MEOIntrusion508.pdf
+  checked: 2026-10-24
+
+unc5537:
+  by: Mandiant (Google Cloud)
+  title: UNC5537 Targets Snowflake Customer Instances for Data Theft and Extortion
+  meta: 10 June 2024.
+  url: https://cloud.google.com/blog/topics/threat-intelligence/unc5537-snowflake-data-theft-extortion
+  checked: 2026-10-24
+
+xz:
+  by: A. Freund
+  title: backdoor in upstream xz/liblzma leading to ssh server compromise
+  meta: oss-security mailing list, 29 March 2024. CVE-2024-3094.
+  url: https://www.openwall.com/lists/oss-security/2024/03/29/4
+  checked: 2026-10-24
+
+crowdstrike-rca:
+  by: CrowdStrike
+  title: External Technical Root Cause Analysis — Channel File 291
+  meta: 6 August 2024.
+  url: https://www.crowdstrike.com/wp-content/uploads/2024/08/Channel-File-291-Incident-Root-Cause-Analysis-08.06.2024.pdf
+  checked: 2026-10-24
+
+ms-crowdstrike:
+  by: D. Weston (Microsoft)
+  title: Helping our customers through the CrowdStrike outage
+  meta: Official Microsoft Blog, 20 July 2024.
+  url: https://blogs.microsoft.com/blog/2024/07/20/helping-our-customers-through-the-crowdstrike-outage/
+  checked: 2026-10-24
+
+tj-actions:
+  by: GitHub
+  title: 'tj-actions/changed-files: compromised version tags (CVE-2025-30066)'
+  meta: Security advisory GHSA-mrrh-fwg8-r2c3, 15 March 2025.
+  url: https://github.com/advisories/GHSA-mrrh-fwg8-r2c3
+  checked: 2026-10-24
+
+shai-hulud:
+  by: CISA
+  title: Widespread Supply Chain Compromise Impacting npm Ecosystem
+  meta: Alert, 23 September 2025.
+  url: https://www.cisa.gov/news-events/alerts/2025/09/23/widespread-supply-chain-compromise-impacting-npm-ecosystem
+  checked: 2026-10-24
+
+npm-trusted:
+  by: GitHub
+  title: npm trusted publishing with OIDC is generally available
+  meta: GitHub Changelog, 31 July 2025.
+  url: https://github.blog/changelog/2025-07-31-npm-trusted-publishing-with-oidc-is-generally-available/
+  checked: 2026-10-24
+
+rekor:
+  by: Sigstore
+  title: Rekor
+  meta: Transparency log documentation.
+  url: https://docs.sigstore.dev/logging/overview/
+  checked: 2026-10-24
+
+ct2:
+  by: IETF (B. Laurie, E. Messeri, R. Stradling)
+  title: Certificate Transparency Version 2.0
+  meta: RFC 9162, December 2021. Experimental.
+  url: https://www.rfc-editor.org/rfc/rfc9162
+  checked: 2026-10-24
+
+scitt:
+  by: IETF (H. Birkholz et al.)
+  title: An Architecture for Trustworthy and Transparent Digital Supply Chains
+  meta: RFC 9943, June 2026. Proposed Standard.
+  url: https://www.rfc-editor.org/rfc/rfc9943
+  checked: 2026-10-24
+
+token-exchange:
+  by: IETF (M. Jones et al.)
+  title: OAuth 2.0 Token Exchange
+  meta: RFC 8693, January 2020. Standards Track.
+  url: https://www.rfc-editor.org/rfc/rfc8693
+  checked: 2026-10-24
+
+resource-indicators:
+  by: IETF (B. Campbell, J. Bradley, H. Tschofenig)
+  title: Resource Indicators for OAuth 2.0
+  meta: RFC 8707, February 2020. Standards Track.
+  url: https://www.rfc-editor.org/rfc/rfc8707
+  checked: 2026-10-24
+
+rar:
+  by: IETF (T. Lodderstedt, J. Richer, B. Campbell)
+  title: OAuth 2.0 Rich Authorization Requests
+  meta: RFC 9396, May 2023. Standards Track.
+  url: https://www.rfc-editor.org/rfc/rfc9396
+  checked: 2026-10-24
+
+prm:
+  by: IETF (M.B. Jones, P. Hunt, A. Parecki)
+  title: OAuth 2.0 Protected Resource Metadata
+  meta: RFC 9728, April 2025. Standards Track.
+  url: https://www.rfc-editor.org/rfc/rfc9728
+  checked: 2026-10-24
+
+rfc5280:
+  by: IETF (D. Cooper et al.)
+  title: Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile
+  meta: RFC 5280, May 2008, §6.1.3.
+  url: https://www.rfc-editor.org/rfc/rfc5280#section-6.1.3
+  checked: 2026-10-24
+
+sc081:
+  by: CA/Browser Forum
+  title: 'Ballot SC081v3: Introduce Schedule of Reducing Validity and Data Reuse Periods'
+  meta: Adopted April 2025.
+  url: https://cabforum.org/2025/04/11/ballot-sc081v3-introduce-schedule-of-reducing-validity-and-data-reuse-periods/
+  checked: 2026-10-24
+
+cabf-br:
+  by: CA/Browser Forum
+  title: Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates
+  meta: Version 2.3.1, 4 October 2026, §6.3.2, and earlier versions.
+  url: https://cabforum.org/working-groups/server/baseline-requirements/documents/
+  checked: 2026-10-24
+
+le-ocsp:
+  by: Let's Encrypt (J. Aas)
+  title: OCSP Service Has Reached End of Life
+  meta: 6 August 2025.
+  url: https://letsencrypt.org/2025/08/06/ocsp-service-has-reached-end-of-life/
+  checked: 2026-10-24
+
+le-short:
+  by: Let's Encrypt (M. McPherrin)
+  title: 6-day and IP Address Certificates are Generally Available
+  meta: 15 January 2026.
+  url: https://letsencrypt.org/2026/01/15/6day-and-ip-general-availability/
+  checked: 2026-10-24
+
+arm-cca:
+  by: Arm
+  title: Arm Confidential Compute Architecture
+  meta: 'Architecture overview: Realm Management Extension and Realms.'
+  url: https://www.arm.com/architecture/security-features/arm-confidential-compute-architecture
+  checked: 2026-10-24
+
+nvidia-cc:
+  by: E. Apsey, P. Rogers, M. O’Connor, R. Nertney (NVIDIA)
+  title: Confidential Computing on NVIDIA H100 GPUs for Secure and Trustworthy AI
+  meta: NVIDIA Technical Blog, 3 August 2023.
+  url: https://developer.nvidia.com/blog/confidential-computing-on-h100-gpus-for-secure-and-trustworthy-ai/
+  checked: 2026-10-24
+
+badram:
+  by: J. De Meulemeester, L. Wilke, D. Oswald, T. Eisenbarth, I. Verbauwhede, J. Van Bulck
+  title: 'BadRAM: Practical Memory Aliasing Attacks on Trusted Execution Environments'
+  meta: IEEE S&P 2025, pp. 4117–4135. CVE-2024-21944.
+  url: https://badram.eu/
+  checked: 2026-10-24
+
+battering-ram:
+  by: J. De Meulemeester, D. Oswald, I. Verbauwhede, J. Van Bulck
+  title: 'Battering RAM: Low-Cost Interposer Attacks on Confidential Computing via Dynamic Memory Aliasing'
+  meta: IEEE S&P 2026, pp. 4391–4407.
+  url: https://batteringram.eu/
+  checked: 2026-10-24
+
+amd-sb-3024:
+  by: AMD
+  title: SEV-SNP Physical Memory Aliasing
+  meta: Security bulletin AMD-SB-3024, 30 September 2025.
+  url: https://www.amd.com/en/resources/product-security/bulletin/amd-sb-3024.html
+  checked: 2026-10-24
+
+wiretap:
+  by: A. Seto, O. K. Duran, S. Amer, J. Chuang, S. van Schaik, D. Genkin, C. Garman
+  title: 'WireTap: Breaking Server SGX via DRAM Bus Interposition'
+  meta: ACM CCS 2025, pp. 708–722.
+  url: https://wiretap.fail/
+  checked: 2026-10-24
+
+teefail:
+  by: J. Chuang, A. Seto, N. Berrios, S. van Schaik, C. Garman, D. Genkin
+  title: 'TEE.Fail: Breaking Trusted Execution Environments via DDR5 Memory Bus Interposition'
+  meta: IEEE S&P 2026, pp. 4408–4426.
+  url: https://tee.fail/
+  checked: 2026-10-24
+
+ddrop:
+  by: J. De Meulemeester et al.
+  title: 'DDRop: Generic Memory Interposer Attacks on Confidential VMs by Dropping DDR5 Writes'
+  meta: ACM CCS 2026; disclosed September 2026.
+  url: https://research.google/pubs/ddrop-generic-memory-interposer-attacks-on-confidential-vms-by-dropping-ddr5-writes/
+  checked: 2026-10-24
+
+fips203:
+  by: NIST
+  title: Module-Lattice-Based Key-Encapsulation Mechanism Standard
+  meta: FIPS 203, August 2024.
+  url: https://csrc.nist.gov/pubs/fips/203/final
+  checked: 2026-10-24
+
+fips204:
+  by: NIST
+  title: Module-Lattice-Based Digital Signature Standard
+  meta: FIPS 204, August 2024.
+  url: https://csrc.nist.gov/pubs/fips/204/final
+  checked: 2026-10-24
+
+fips205:
+  by: NIST
+  title: Stateless Hash-Based Digital Signature Standard
+  meta: FIPS 205, August 2024.
+  url: https://csrc.nist.gov/pubs/fips/205/final
+  checked: 2026-10-24
+
+ir8547:
+  by: NIST (D. Moody et al.)
+  title: Transition to Post-Quantum Cryptography Standards
+  meta: NIST IR 8547, initial public draft, November 2024.
+  url: https://csrc.nist.gov/pubs/ir/8547/ipd
+  checked: 2026-10-24
+
+sp800-208:
+  by: NIST (D. Cooper et al.)
+  title: Recommendation for Stateful Hash-Based Signature Schemes
+  meta: SP 800-208, October 2020.
+  url: https://csrc.nist.gov/pubs/sp/800/208/final
+  checked: 2026-10-24
+
+cnsa2:
+  by: NSA
+  title: Announcing the Commercial National Security Algorithm Suite 2.0
+  meta: Cybersecurity advisory, September 2022.
+  url: https://media.defense.gov/2025/May/30/2003728741/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS.PDF
+  checked: 2026-10-24
+
+chrome-pq:
+  by: D. Adrian, D. Benjamin, B. Beck, D. O’Brien (Google)
+  title: A new path for Kyber on the web
+  meta: Google Online Security Blog, 13 September 2024.
+  url: https://security.googleblog.com/2024/09/a-new-path-for-kyber-on-web.html
+  checked: 2026-10-24
+
+cf-pq:
+  by: Cloudflare
+  title: Cloudflare targets 2029 for full post-quantum security
+  meta: 7 April 2026.
+  url: https://blog.cloudflare.com/post-quantum-roadmap/
+  checked: 2026-10-24
+
+owasp-llm:
+  by: OWASP GenAI Security Project
+  title: OWASP Top 10 for LLM Applications 2025
+  meta: November 2024. LLM01 Prompt Injection; LLM06 Excessive Agency.
+  url: https://genai.owasp.org/llm-top-10/
+  checked: 2026-10-24
+
+nist-aml:
+  by: NIST (A. Vassilev et al.)
+  title: 'Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations'
+  meta: NIST AI 100-2 E2025, March 2025, §3.4.
+  url: https://csrc.nist.gov/pubs/ai/100/2/e2025/final
+  checked: 2026-10-24
+
+camel:
+  by: E. Debenedetti et al.
+  title: Defeating Prompt Injections by Design
+  meta: IEEE SaTML 2026, pp. 587–618. arXiv:2503.18813.
+  url: https://arxiv.org/abs/2503.18813
+  checked: 2026-10-24
+
+trifecta:
+  by: S. Willison
+  title: 'The lethal trifecta for AI agents: private data, untrusted content, and external communication'
+  meta: 16 June 2025.
+  url: https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/
+  checked: 2026-10-24
+
+mcp-auth:
+  by: Model Context Protocol
+  title: Authorization
+  meta: Specification revision 2026-07-28.
+  url: https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization
+  checked: 2026-10-24
+
+mcp-sec:
+  by: Model Context Protocol
+  title: Security Best Practices
+  meta: Revision 2026-07-28.
+  url: https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices
+  checked: 2026-10-24
+
+owasp-docker:
+  by: OWASP Cheat Sheet Series
+  title: Docker Security Cheat Sheet
+  meta: Rule 1. Accessed 24 October 2026.
+  url: https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html
+  checked: 2026-10-24
